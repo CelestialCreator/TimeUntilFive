@@ -1,0 +1,33 @@
+@import 'libs/skel';
+
+// Change these breakpoints however you like.
+@include skel-breakpoints((
+	xlarge: '(max-width: 1680px)',
+	large:  '(max-width: 1280px)',
+	medium: '(max-width: 980px)',
+	small:  '(max-width: 736px)',
+	xsmall: '(max-width: 480px)'
+));
+
+// Modify these settings to suit your needs.
+@include skel-layout((
+	reset: 'full',
+	boxModel: 'border',
+	containers: 60em,
+	grid: ( gutters: 2em ),
+	breakpoints: (
+		large: (
+			containers: 65em,
+			grid: ( gutters: 1.5em )
+		),
+		medium: (
+			containers: 90%
+		),
+		small: (
+			containers: (90%, true),
+			grid: ( gutters: 1.25em )
+		)
+	)
+));
+
+// Import SASS files here (Must be imported after initializing Skel)
