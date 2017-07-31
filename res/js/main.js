@@ -15,3 +15,6 @@
 	    xsmall: '(max-width: 480px)'
 	});
 })();
+
+// Keep it up!
+// Hang in there!
