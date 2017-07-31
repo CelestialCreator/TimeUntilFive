@@ -10,6 +10,8 @@
 		Load stylesheets here.
 		In production, comment main.css and uncomment dist.min.css.
 	-->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="res/css/main.css" />
 	<!-- <link rel="stylesheet" href="dist/dist.min.css" /> -->
 
@@ -20,9 +22,54 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="res/js/plugins/skel.min.js"></script>
 	<script src="res/js/main.js"></script>
+	<script src="res/js/countdown.js"></script>
 	<!-- <script src="dist/dist.min.js"></script> -->
 </head>
 <body>
-	<h1>First header</h1>
+	<div class="container">
+		<h1>The work day ends in:</h1>
+
+		<div class="countdown-container">
+			<div class="countdown">
+				<span class="unit">
+					<span class="value">2</span>
+					<!-- <span class="unit-label">Hours</span> -->
+				</span>
+				<!-- <div style="display: inline-table; vertical-align: top; font-size: 6em;">:</div> -->
+				<span class="unit">
+					<span class="value">47</span>
+					<!-- <span class="unit-label">Minutes</span> -->
+				</span>
+				<!-- <div style="display: inline-table; vertical-align: top; font-size: 6em;">:</div> -->
+				<span class="unit">
+					<span class="value">26</span>
+					<!-- <span class="unit-label">Seconds</span> -->
+				</span>
+			</div>
+		</div>
+
+		<h2>Hang in there!</h2>
+		<!-- <section id="countdown">
+			<div class="countdown-container">
+				<div class="unit">
+					<div class="box">2</div>
+					<div class="unit-label">Hours</div>
+				</div>
+				<div class="unit">
+					<div class="box">02</div>
+					<div class="unit-label">Minutes</div>
+				</div>
+				<div class="unit">
+					<div class="box">02</div>
+					<div class="unit-label">Seconds</div>
+				</div>
+			</div>
+		</section> -->
+
+		<noscript>
+			<p class="message">Please enable Javascript to view the timer.</p>
+		</noscript>
+		<!-- <p id="demo"></p> -->
+	</div>
 </body>
 </html>
