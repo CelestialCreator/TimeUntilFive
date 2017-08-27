@@ -1188,12 +1188,6 @@ h1 {
 h2 {
   font-size: 2em; }
 
-.box {
-  font-size: 72pt; }
-
-.unit-label {
-  font-size: 14pt; }
-
 body {
   padding-top: 10%;
   background: url("../images/background3.png");
@@ -1223,37 +1217,32 @@ h2 {
   text-align: center; }
 
 .countdown {
-  color: #C62828;
+  color: #FFDC50;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   display: inline-block;
-  border: 4px solid #C62828;
+  border: 4px solid #FFDC50;
   border-radius: 10px; }
 
-.unit {
-  margin: 0 0.75em;
-  display: inline-block;
-  text-align: center; }
+.unit:first-child {
+  margin-left: 0.75em; }
 
-.value {
-  display: block;
-  font-size: 6em;
+.unit:last-child {
+  margin-right: 0.75em; }
+
+.unit {
+  margin: 0 0.5em;
+  display: inline-block;
+  text-align: center;
   position: relative; }
 
-.value:after {
-  content: "test";
-  position: absolute;
-  font-size: 1rem;
-  font-weight: bold;
-  bottom: -1.5em;
-  color: #378CFF;
-  display: block;
-  text-align: center;
-  width: 100%; }
+.value {
+  font-size: 7em;
+  position: relative; }
 
 .unit-label {
-  color: #378CFF;
-  font-weight: bold; }
+  margin-left: -0.1em;
+  font-size: 1.75em; }
 
 footer {
   margin-bottom: 3em;
