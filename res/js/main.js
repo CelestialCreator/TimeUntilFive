@@ -16,27 +16,28 @@
 	});
 })();
 
-// Keep it up!
-// Hang in there!
-
 var moralSupportMessages = ["Hang in there!", "Keep it up!", "You can do it!", "Keep those gears turning!"]
 var celebrationMessages = ["Yay!", "Good job!", "Keep up the good work!"]
 var endedTitle = "The work day has ended!";
 
 window.onload = function() {
+	updatePage();
+}
+
+function updatePage() {
 	var messageArray = moralSupportMessages;
-	console.log(messageArray);
-	console.log(typeof(isPastFive));
 
 	var title = document.getElementById("title");
 	var timer = document.getElementById("timer");
+	var moralSupport = document.getElementById("moral-support");
+
 	if(isPastFive()) {
-		timer.style.display = "none";
 		title.innerHTML = endedTitle;
+		moralSupport.className += " celebration";
 		messageArray = celebrationMessages;
 	}
 
-	document.getElementById("moral-support").innerHTML = messageArray[Math.floor(Math.random() * messageArray.length)];
+	moralSupport.innerHTML = messageArray[Math.floor(Math.random() * messageArray.length)];
 }
 
 function isPastFive() {
