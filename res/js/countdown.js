@@ -11,9 +11,10 @@ var x = setInterval(function() {
 	// Find the distance between now an the count down date
 	var distance = countDownTime - now;
 
-	// If the count down is over, write some text 
-	if (distance < 0) {
+	// If the count down is over, update the page
+	if (distance <= 0) {
 		clearInterval(x);
+		updatePage();
 		return;
 	}
 	
