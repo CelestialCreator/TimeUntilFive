@@ -18,3 +18,9 @@
 
 // Keep it up!
 // Hang in there!
+
+var messages = ["Hang in there!", "Keep it up!", "You can do it!", "Keep those gears turning!"]
+
+window.onload = function() {
+	document.getElementById("moral-support").innerHTML = messages[Math.floor(Math.random() * messages.length)];
+}
