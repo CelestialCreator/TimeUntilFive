@@ -33,7 +33,6 @@ function updatePage() {
 
 	if(isPastFive()) {
 		title.innerHTML = endedTitle;
-		moralSupport.className += " celebration";
 		messageArray = celebrationMessages;
 	}
 
