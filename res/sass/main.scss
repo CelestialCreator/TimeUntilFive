@@ -33,23 +33,7 @@
 // Import SASS files here (Must be imported after initializing Skel)
 
 $text-color: #378CFF;
-$box-color: #C62828;
-
-h1 {
-	font-size: 4em;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-.box {
-	font-size: 72pt;
-}
-
-.unit-label {
-	font-size: 14pt;
-}
+$box-color: #FFDC50;
 
 body {
 	padding-top: 10%;
@@ -66,15 +50,17 @@ h1, h2, h3 {
 
 h1 {
 	margin: 0.25em auto;
+	font-size: 4em;
 }
 
 h2 {
 	margin: 0.75em auto;
+	font-size: 2em;
 }
 
 .message {
 	margin-bottom: 2.7em;
-	color: #FFDC50;
+	color: $box-color;
 	text-align: center;
 	font-size: 24px;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -86,7 +72,7 @@ h2 {
 }
 
 .countdown {
-	color: #C62828;
+	color: $box-color;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 
@@ -95,50 +81,27 @@ h2 {
 	border-radius: 10px;
 }
 
-.unit {
-	margin: 0 0.75em;
-	display: inline-block;
-	text-align: center;
+.unit:first-child {
+	margin-left: 0.75em;
 }
 
-.value {
-	display: block;
-	font-size: 6em;
+.unit:last-child {
+	margin-right: 0.75em;
+}
+
+.unit {
+	margin: 0 0.5em;
+	display: inline-block;
+	text-align: center;
 	position: relative;
 }
 
-.value:after {
-	content: "test";
-    position: absolute;
-    font-size: 1rem;
-    font-weight: bold;
-    bottom: -1.5em;
-    color: #378CFF;
-    display: block;
-    text-align: center;
-    width: 100%;
+.value {
+	font-size: 7em;
+	position: relative;
 }
 
 .unit-label {
-	color: $text-color;
-	font-weight: bold;
-}
-
-footer {
-	margin-bottom: 3em;
-	color: rgba(255, 255, 255, 0.4);
-	text-align: center;
-	font-size: 12pt;
-	font-family: 'Source Sans Pro', sans-serif;
-	transition: color 0.15s;
-}
-
-#email-toggle {
-	display: inline-block;
-	cursor: pointer;
-}
-
-#email-toggle:hover {
-	color: rgba(255, 255, 255, 0.75);
-	transition: color 0.2s;
+	margin-left: -0.1em;
+	font-size: 1.75em;
 }
