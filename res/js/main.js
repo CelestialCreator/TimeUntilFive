@@ -19,8 +19,28 @@
 // Keep it up!
 // Hang in there!
 
-var messages = ["Hang in there!", "Keep it up!", "You can do it!", "Keep those gears turning!"]
+var moralSupportMessages = ["Hang in there!", "Keep it up!", "You can do it!", "Keep those gears turning!"]
+var celebrationMessages = ["Yay!", "Good job!", "Keep up the good work!"]
+var endedTitle = "The work day has ended!";
 
 window.onload = function() {
-	document.getElementById("moral-support").innerHTML = messages[Math.floor(Math.random() * messages.length)];
+	var messageArray = moralSupportMessages;
+	console.log(messageArray);
+	console.log(typeof(isPastFive));
+
+	var title = document.getElementById("title");
+	var timer = document.getElementById("timer");
+	if(isPastFive()) {
+		timer.style.display = "none";
+		title.innerHTML = endedTitle;
+		messageArray = celebrationMessages;
+	}
+
+	document.getElementById("moral-support").innerHTML = messageArray[Math.floor(Math.random() * messageArray.length)];
+}
+
+function isPastFive() {
+	var now = new Date();
+	var five = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 17).getTime();
+	return five - now <= 0;
 }
