@@ -1182,12 +1182,6 @@ body {
 
   .\-1u\28xsmall\29 {
     margin-left: 8.33333%; } }
-h1 {
-  font-size: 4em; }
-
-h2 {
-  font-size: 2em; }
-
 body {
   padding-top: 10%;
   background: url("../images/background3.png");
@@ -1200,10 +1194,12 @@ h1, h2, h3 {
   text-align: center; }
 
 h1 {
-  margin: 0.25em auto; }
+  margin: 0.25em auto;
+  font-size: 4em; }
 
 h2 {
-  margin: 0.75em auto; }
+  margin: 0.75em auto;
+  font-size: 2em; }
 
 .message {
   margin-bottom: 2.7em;
@@ -1243,19 +1239,3 @@ h2 {
 .unit-label {
   margin-left: -0.1em;
   font-size: 1.75em; }
-
-footer {
-  margin-bottom: 3em;
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  font-size: 12pt;
-  font-family: 'Source Sans Pro', sans-serif;
-  transition: color 0.15s; }
-
-#email-toggle {
-  display: inline-block;
-  cursor: pointer; }
-
-#email-toggle:hover {
-  color: rgba(255, 255, 255, 0.75);
-  transition: color 0.2s; }
